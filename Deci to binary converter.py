@@ -25,6 +25,9 @@ def click():
         num = num + str(na)
 
     messagebox.showinfo(message = f"binary number of {num_get} is {num}")
+    n_enter.focus_set()
+    n_enter.delete(0, tk.END)
+
 
 
 enter = tk.Button(root, text = " Calculate! ", command = click)
@@ -36,3 +39,4 @@ warn.grid(row = 2 , column = 3)
 enter.grid(row = 3, column = 2)
 
 root.mainloop()
+
